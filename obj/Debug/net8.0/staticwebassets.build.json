@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "S/LVM250OYJMNSb6jY0yJLe9Z/10Yak8rKRYDB2XJwc=",
+  "Source": "WebApiAutores",
+  "BasePath": "_content/WebApiAutores",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiAutores\\wwwroot",
+      "Source": "WebApiAutores",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\WebApiAutores\\WebApiAutores\\wwwroot\\",
+      "BasePath": "_content/WebApiAutores",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\WebApiAutores\\WebApiAutores\\wwwroot\\Archivo1.txt",
+      "SourceId": "WebApiAutores",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\WebApiAutores\\WebApiAutores\\wwwroot\\",
+      "BasePath": "_content/WebApiAutores",
+      "RelativePath": "Archivo1.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Archivo1.txt"
+    }
+  ]
+}
