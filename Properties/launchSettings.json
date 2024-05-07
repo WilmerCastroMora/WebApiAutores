@@ -26,8 +26,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        " apellido": "apellido de ambiente"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   },

@@ -148,3 +148,4 @@ C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\refint\
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.pdb
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.genruntimeconfig.cache
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\ref\WebApiAutores.dll
+C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.sourcelink.json

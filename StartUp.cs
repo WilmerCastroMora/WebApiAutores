@@ -35,7 +35,8 @@ namespace WebApiAutores
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidateAudience = false,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["llavejwt"])) 
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["llavejwt"])),
+                    ClockSkew = TimeSpan.Zero
                 }
             );
 
