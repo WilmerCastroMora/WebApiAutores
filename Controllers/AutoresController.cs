@@ -25,9 +25,9 @@ namespace WebApiAutores.Controllers
             this.configuracion = configuracion;
         }
         [HttpGet("configuraciones")]
-        public ActionResult<string> ObtenerConfiguraciones()
+        public ActionResult<string> ObtenerApellido()
         {
-            return configuracion["llaveJWT"];
+            return configuracion["apellido"];
         }
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
