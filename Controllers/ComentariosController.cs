@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiAutores.DTOs;
@@ -35,16 +37,18 @@ namespace WebApiAutores.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(int id, ComentarioCreacionDTO comentarioCreacionDTO)
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<ActionResult> Post(int libroId, ComentarioCreacionDTO comentarioCreacionDTO)
         {
-            var existeLibro= await context.Libros.AnyAsync(libroDB => libroDB.Id == id);
+            var email = HttpContext.User.Claims.Where(claim => claim.Type == "email").FirstOrDefault();
+            var existeLibro= await context.Libros.AnyAsync(libroDB => libroDB.Id == libroId);
             if (!existeLibro)
             {
                 return NotFound();
             }
 
             var comentario = mapper.Map<Comentario>(comentarioCreacionDTO);
-            comentario.LibroId = id;
+            comentario.LibroId = libroId;
             context.Add(comentario);
             await context.SaveChangesAsync();
 

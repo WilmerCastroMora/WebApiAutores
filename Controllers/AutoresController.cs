@@ -12,6 +12,7 @@ namespace WebApiAutores.Controllers
 {
     [ApiController]
     [Route("api/autores")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class AutoresController : ControllerBase
     {
         private readonly ApplicationDBContext contest;
@@ -25,12 +26,12 @@ namespace WebApiAutores.Controllers
             this.configuracion = configuracion;
         }
         [HttpGet("configuraciones")]
+        [AllowAnonymous]
         public ActionResult<string> ObtenerApellido()
         {
             return configuracion["apellido"];
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [HttpGet("listado")] //api/autores/listado
         [HttpGet("/listado")] //listado
