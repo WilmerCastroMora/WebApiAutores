@@ -134,6 +134,7 @@ C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiA
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.sourcelink.json
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\staticwebassets\msbuild.WebApiAutores.Microsoft.AspNetCore.StaticWebAssets.props
@@ -148,4 +149,3 @@ C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\refint\
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.pdb
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.genruntimeconfig.cache
 C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\ref\WebApiAutores.dll
-C:\Users\admin\source\repos\WebApiAutores\WebApiAutores\obj\Debug\net8.0\WebApiAutores.sourcelink.json
