@@ -1,0 +1,43 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: vs2017-win2016
+  
+variables:
+  buildConfiguration: 'release'
+  proyecto : 'WebApiAutores/WebApiAutores.csproj'
+
+steps:
+- task: 'DotNetCoreCLI@0'
+    inputs:
+  - script: dotnet build --configuration $(buildConfiguration)
+    displayName : dotnet build $(buildConfiguration)
+
+-Task: CmdLine@2
+  inputs:
+    displayName: 'Instalando EF CORE Cli '
+    script: 'dotnet tool install --global dotnet-ef'
+
+-Task: CmdLine@2
+  inputs:
+    displayName: 'Generating DB Scripts'
+    script: 'dotnet ef migrations scripts -i -o $(Build.ArtifactStagingDirectory)\migrate.sql --project $(proyecto)'
+
+-Task: CmdLine@2
+  inputs:
+    displayName: 'Publishing Apps'
+    command: 'publish'
+    publishWebProjects: false
+    projects: $(proyecto)
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) --runtime win-x64 self-contained'
+    zioAfterPublish: false
+    modifyOutputPath: false
+
+-Task: PublishBuildArtifacts@1
+  displayName: 'Publicando los artefactos'
